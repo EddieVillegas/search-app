@@ -1,0 +1,9 @@
+*
+!assets
+!config
+!models
+!public
+!views
+!package.json
+!server.js
+!.gitignore
