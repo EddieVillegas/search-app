@@ -1,0 +1,15 @@
+extends layaout.pug
+
+block content
+    h1= title
+    .search-container
+        input#search_input(
+            type="text"
+            name="searchTerm"
+            placeholder="Search..."
+            hx-get="/search"
+            hx-target="#results"
+            hx-trigger="input changed delay:500"
+            autocomplete="off"
+        )
+        #results
