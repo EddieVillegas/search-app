@@ -1,20 +1,22 @@
 {
   "name": "search-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "node --watch server.js"
+    "dev": "bun run --hot src/server.tsx",
+    "dev:css": "npx @tailwindcss/cli -i ./src/styles.css -o ./public/styles.css --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
-    "mongodb-memory-server": "^10.2.0",
-    "mongoose": "^8.18.0"
+    "@hono/zod-validator": "^0.7.3",
+    "@prisma/client": "^6.16.2",
+    "@tailwindcss/cli": "^4.1.13",
+    "hono": "^4.9.6",
+    "mongodb-memory-server": "^10.2.1",
+    "mongoose": "^8.18.2",
+    "tailwindcss": "^4.1.13",
+    "zod": "^4.1.11"
   },
   "devDependencies": {
-    "@faker-js/faker": "^10.0.0"
+    "@faker-js/faker": "^10.0.0",
+    "@types/bun": "latest",
+    "prisma": "^6.16.2"
   }
 }

@@ -1,15 +1,4 @@
-*
-!/assets/
-!/assets/**
-!/config/
-!/config/**
-!/models/
-!/models/**
-!/public/
-!/public/**
-!/views/
-!/views/**
-!package.json
-!server.js
-!.gitignore
-!README.md
+# deps
+node_modules/
+
+/src/generated/prisma
